@@ -9,6 +9,4 @@ app.post('/messages', Producer.run);
 
 app.listen(3333, ()=> {
     console.log('Server rodando on localhost:3333')
-})
-
-
+});
