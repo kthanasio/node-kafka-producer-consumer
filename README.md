@@ -4,9 +4,12 @@
 ``docker-compose up -d --build``
 
 ## Stop Kafka Container
-- docker container ls -aq
-- docker container stop $(docker container ls -a -q -f "label=io.confluent.docker")
-- docker container stop $(docker container ls -a -q -f "label=io.confluent.docker") && docker system prune -a -f --volumes
+``docker container ls -aq``
+
+``docker container stop $(docker container ls -a -q -f "label=io.confluent.docker")``
+
+``docker container stop $(docker container ls -a -q -f "label=io.confluent.docker") && docker system prune -a -f --volumes``
+
 
 # Producer
 
