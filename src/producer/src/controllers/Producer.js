@@ -20,7 +20,7 @@ export default {
                     producer.close(()=>{
                         //console.log('Closing connection');
                     });
-                    return res.json({ message: `Mensagem ${JSON.stringify(data)} publicada com sucesso!`});
+                    return res.json({ message: `Message ${JSON.stringify(data)} published ok!`});
             });
         });
         producer.on('error', function (err) {console.log('OnError: ', err);})
