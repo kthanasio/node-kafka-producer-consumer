@@ -1,7 +1,12 @@
 # Kafka
 
-* Start kafka server
+## Start kafka Container
 ``docker-compose up -d --build``
+
+## Stop Kafka Container
+- docker container ls -aq
+- docker container stop $(docker container ls -a -q -f "label=io.confluent.docker")
+- docker container stop $(docker container ls -a -q -f "label=io.confluent.docker") && docker system prune -a -f --volumes
 
 # Producer
 
